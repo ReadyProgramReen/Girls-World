@@ -1,0 +1,60 @@
+/* all css part  */
+@import url('PageParts/header.css');
+@import url('PageParts/product.css');
+@import url('PageParts/shop.css');
+@import url('PageParts/singleProduct.css');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+
+/*css color  */
+:root{
+  --purple:#b042ff;
+  --yellow :#fec959;
+  --cart-bg:#674182;
+  --cart-shop:#584169;
+  --dark: #27282c;
+  --hover: #277282cee;
+  --body:#CBC3E3;
+}
+
+
+body{
+  background-color: var(--body);
+  color:white; 
+  margin: 2rem 0 ;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  max-width: 1280px;
+}
+
+
+.footer{
+  background-color: #aba1c9;
+  text-align: center;
+  border-radius: 10px;
+}
+footer p{
+  color: #0a090d;
+  padding: 0.5rem;
+}
+
+
+@media(max-width: 490px){
+
+.footer p{
+    font-size: 0.7rem;
+  }
+
+}
