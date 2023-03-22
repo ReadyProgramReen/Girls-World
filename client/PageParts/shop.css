@@ -1,0 +1,122 @@
+
+/*shopping cart at the top right  */
+.header .shop_cart{
+    background:linear-gradient(#674182,#b042ff,#674182);
+    border-radius: 5px;
+    position: absolute;
+    right:10px;
+    top:50px;
+    width:17rem;
+    padding:0.5rem;
+    display:flex;
+    flex-direction: column;
+    overflow-x:visible ;
+    gap:1rem;
+    z-index: 10000;
+    transform: translateX(25rem);
+    transition: transform 400ms ease-in-out;
+  }
+  
+  .header .shop_cart.active{
+    transform: translateX(0);
+
+  }
+  .shopping{
+    cursor:pointer;
+    width:1.6rem;
+    height:1.6rem;
+  /*   border:50px; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:0.3rem;
+  }
+  
+  .shopping .shopCount{
+    width:1.6rem;
+      height:1.6rem;
+    border-radius:50px;
+  }
+  
+  .shopping:hover{
+    background-color: rgba(255,255,255,0.2);
+    padding:0.3rem;
+  }
+  
+  .shopping i{
+    color: var(--cart-shop);
+  }
+  
+  .shopCount{
+    color:var(--cart-shop);
+  }
+  .shop_cart .product{
+    display:flex;
+    align-items: center;
+    padding:1rem;
+    background-color: var(--cart-shop);
+    
+  }
+  
+  .shop_cart .added-products{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .added-products img{
+    height:90px;
+    cursor:pointer;
+  }
+  
+  .texts{
+    font-size:0.9rem ;
+    color:var(--yellow);
+    padding: 0.5rem;
+    cursor:pointer;
+  }
+  
+  .remove{
+    text-align: left;
+   margin-top:0.6rem;
+  }
+  
+  .remove button{
+    background-color:var(--yellow);
+    border:none;
+    color:var(--purple );
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+  }
+  .remove button:hover,.btn:hover,.remove_all:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow:0 3px 7px rgba(0,0,0,0.8);
+  }
+  
+  .btn,.remove_all{
+    cursor: pointer;
+    width:100%;
+    border: none;
+    background-color:var(--yellow);
+    color:var(--purple );
+    padding:0.5rem;
+    margin-top:0.3rem ;
+  }
+  .total_price .price{
+  /*   display: inline-block;
+    width: 10px; */
+    color:#e0bcf7;
+    font-size: 1.0rem;
+    padding: 0.2rem;
+    
+  }
+  total_price span{
+    text-align: right;
+  }
+  hr{
+    width:99%;
+      height: 1px;
+      background-color:var(--cart-bg);
+      border: none;
+  }
